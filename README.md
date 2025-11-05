@@ -1,20 +1,33 @@
-# React + Vite
+# Profiles App (Lab 1)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Dev Container
 
-Currently, two official plugins are available:
+> Talk about the image you are using here.!
+For eg, if i were to use the Node.js dev container, I would write:
+- Node.js dev container (image: `mcr.microsoft.com/devcontainers/javascript-node:20`)
+- `corepack enable` to use npm/yarn/pnpm reliably
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting Started
+\ ```bash
+npm install
+npm run dev
+# open the shown URL (e.g., http://localhost:5173)
+\ ```
 
-## React Compiler
+## Build
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+\ ```bash
+npm run build
+\ ```
 
-## Expanding the ESLint configuration
+## Deploy (GitHub Pages via Actions)
+- Ensure `base: '/profiles-app/'` in `vite.config.js`
+- Push to `main`; the CI workflow will build and deploy automatically.
+- Settings → Pages → Source: **GitHub Actions**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Live URL:** https://rayudurajaharsha.github.io/profiles-app/
 
-link for deployment :
-https://rayudurajaharsha.github.io/profiles-app/
-![Deploy](https://github.com/rayudurajaharsha/profiles-app/actions/workflows/deploy.yml/badge.svg)
+## Notes
+- Uses React + React-Bootstrap.
+- We use components, props, and `.map()`.
+
