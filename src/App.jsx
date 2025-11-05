@@ -6,6 +6,7 @@ export default function App() {
     <Container className="py-5">
       <Alert variant="primary" className="text-center mb-0">
         Hello React
+        i am harsha
       </Alert>
     </Container>
   );
